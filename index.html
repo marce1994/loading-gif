@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gif API Landing Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+    
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+    
+        p {
+            margin-top: 0;
+        }
+    
+        code {
+            background-color: #eee;
+            padding: 0.2rem;
+            border-radius: 0.2rem;
+        }
+    
+        div {
+            margin-top: 1rem;
+        }
+    
+        img {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Loading gifs for your website</h1>
+    <p>Use the following URL to get a random gif: <code>http://localhost:8080/gif</code></p>
+    <p>Use the following URL to get a random gif with a specific tag: <code>http://localhost:8080/gif?tag=TAG</code></p>
+    <h2>Sample Gifs</h2>
+
+    <!-- Gif{ID: 1, URL: "https://media.tenor.com/rt2qSDNvVEQAAAAi/pikachu-dance.gif", Likes: 10, Dislikes: 2, Tags: []string{"Pokemon", "Bailando"}},
+		Gif{ID: 2, URL: "https://media.tenor.com/SWzRKMsofdcAAAAi/eevee-dance.gif", Likes: 5, Dislikes: 1, Tags: []string{"Pokemon", "Volando"}},
+		Gif{ID: 3, URL: "https://media.tenor.com/rdevaZZ7Yd0AAAAi/eevee-evoli.gif", Likes: 8, Dislikes: 3, Tags: []string{"Bailando"}},
+		Gif{ID: 4, URL: "https://media.tenor.com/IgUGgEFr_o4AAAAi/supermegaespecifictag.gif", Likes: 4, Dislikes: 1, Tags: []string{"Volando"}},
+		Gif{ID: 5, URL: "https://media.tenor.com/swTLDbJLpSYAAAAi/eevee-dance.gif", Likes: 1, Dislikes: 0, Tags: []string{"Pokemon"}},
+		Gif{ID: 5, URL: "https://media.tenor.com/_-Y9OYD_cWwAAAAj/duck-bwong.gif", Likes: 1, Dislikes: 0, Tags: []string{"duck", "bwong", "dance"},},	 -->
+
+    <div>
+        <img src="http://localhost:8080/gif" alt="Random Gif" width="200" height="200" object-fit="cover">
+        <p>Embed this gif in your website using the following HTML code:</p>
+        <code>&lt;img src="http://localhost:8080/gif" alt="Random Gif"&gt;</code>
+    </div>
+    <div>
+        <img src="http://localhost:8080/gif?tag=Pokemon" alt="Random Gif" width="200" height="200" object-fit="cover">
+        <p>Embed this gif in your website using the following HTML code:</p>
+        <code>&lt;img src="http://localhost:8080/gif?tag=Pokemon" alt="Pokemon Gif"&gt;</code>
+    </div>
+    <div>
+        <img src="http://localhost:8080/gif?tag=Bailando" alt="Random Gif" width="200" height="200" object-fit="cover">
+        <p>Embed this gif in your website using the following HTML code:</p>
+        <code>&lt;img src="http://localhost:8080/gif?tag=Bailando" alt="Bailando Gif"&gt;</code>
+    </div>
+    <div>
+        <img src="http://localhost:8080/gif?tag=duck" alt="Random Gif" width="200" height="200" object-fit="cover">
+        <p>Embed this gif in your website using the following HTML code:</p>
+        <code>&lt;img src="http://localhost:8080/gif?tag=duck" alt="duck Gif"&gt;</code>
+    </div>
+</body>
+
+</html>
